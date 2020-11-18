@@ -19,3 +19,10 @@ allow system_app sysfs_oppo_display:dir search;
 allow system_app sysfs_oppo_display:file { getattr open read write };
 allow system_app sysfs_usb_supply:dir search;
 allow system_app sysfs_usb_supply:file { getattr open read write };
+
+allow system_app sysfs_fps:file { getattr open read };
+allow system_app sysfs_graphics:dir search;
+allow system_app sysfs_graphics:file { getattr open read };
+allow system_app sysfs_leds:dir { search };
+allow system_app sysfs_leds:file { open read getattr write };
+allow system_app sysfs_leds:file rw_file_perms;
