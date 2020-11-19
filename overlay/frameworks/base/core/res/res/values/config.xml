@@ -492,9 +492,6 @@
     <!-- Whether device ignores the RSSNR signal implementation -->
     <bool name="config_ignoreRssnrSignalLevel">true</bool>
 
-    <!-- Whether device has a physical display cutout -->
-    <bool name="config_physicalDisplayCutout">true</bool>
-
     <!-- The list of components which should be automatically disabled for a specific package. --> 
     <string-array name="config_disabledComponents" translatable="false">
 	<item>com.google.android.googlequicksearchbox/com.google.android.hotword.service.HotwordService</item>
@@ -633,9 +630,9 @@
     <bool name="showFODAnimationPicker">true</bool>
     
     <!-- Whether Multiuser UI should be shown -->
-    <bool name="config_enableMultiUserUI">false</bool>
+    <bool name="config_enableMultiUserUI">true</bool>
 
 	<!-- Maximum number of supported users -->
-    <integer name="config_multiuserMaximumUsers">1</integer>
+    <integer name="config_multiuserMaximumUsers">6</integer>
 
 </resources>

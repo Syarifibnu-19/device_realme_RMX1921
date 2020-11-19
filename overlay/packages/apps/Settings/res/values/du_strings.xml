@@ -23,7 +23,7 @@
     <string name="maintainer_name"> Syarif Ibnu </string>
 
     <!-- Device specific doze package -->
-    <string name="config_customDozePackage">org.lineageos.settings/org.lineageos.settings.doze.DozeSettingsActivity</string>
+    <string name="config_customDozePackage">com.custom.ambient.display/com.custom.ambient.display.DozeSettings</string>
 
     <!-- Battery Health -->
     <string name="config_batDesCap">/sys/class/power_supply/battery/charge_full</string>
