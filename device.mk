@@ -298,10 +298,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     NusantaraPapers
 
-# NoCutout
-PRODUCT_PACKAGES += \
-    NoCutoutOverlay
-
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2-service-qti
