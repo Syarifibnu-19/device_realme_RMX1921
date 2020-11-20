@@ -14,12 +14,19 @@
  * limitations under the License.
  */
 
+#include <drm/sde_drm.h>
 #include <compositionengine/FodExtension.h>
 
 uint32_t getFodZOrder(uint32_t z, bool touched) {
-    return touched ? 1090519091 : z;
+    if (touched) {
+       z |= FOD_PRESSED_LAYER_ZORDER;
 }
 
-uint64_t getFodUsageBits(uint64_t usageBits, bool) {
+return z;
+
+}
+
+uint64_t getFodUsageBits(uint64_t usageBits, bool touched) {
+    (void) touched;
     return usageBits;
 }

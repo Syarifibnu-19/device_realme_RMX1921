@@ -5,6 +5,9 @@
 #
 
 # Inherit some common Nusantara stuff
+NAD_BUILD_TYPE := OFFICIAL
+TARGET_BOOT_ANIMATION_RES := 1080
+USE_PIXEL_CHARGING := true
 $(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 
 # Inherit from RMX1921 device
@@ -17,8 +20,6 @@ PRODUCT_DEVICE := RMX1921
 PRODUCT_MANUFACTURER := Realme
 PRODUCT_NAME := nad_RMX1921
 PRODUCT_MODEL := Realme XT
-NAD_BUILD_TYPE := OFFICIAL
-USE_PIXEL_CHARGING := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-realme
 
