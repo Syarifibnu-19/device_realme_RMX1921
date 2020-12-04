@@ -4,25 +4,24 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common Evolution-X stuff
-TARGET_GAPPS_ARCH := arm64
-TARGET_FACE_UNLOCK_SUPPORTED := true
+# Inherit some common Nusantara stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_BOOT_ANIMATION_RES_EVO := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
-WITH_GAPPS := true
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+USE_PIXEL_CHARGING := true
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+$(call inherit-product, packages/apps/NusantaraParts/nadproject.mk)
 
 # Inherit from RMX1921 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
+EXTRA_FOD_ANIMATIONS := true
 
 PRODUCT_BRAND := Realme
 PRODUCT_DEVICE := RMX1921
 PRODUCT_MANUFACTURER := Realme
-PRODUCT_NAME := evolution_RMX1921
+PRODUCT_NAME := nad_RMX1921
 PRODUCT_MODEL := Realme XT
+NAD_BUILD_TYPE := OFFICIAL
 
-PRODUCT_GMS_CLIENTID_BASE := android-oppo
+PRODUCT_GMS_CLIENTID_BASE := android-realme
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="coral-user 11 RP1A.201105.002 6869500 release-keys" \
